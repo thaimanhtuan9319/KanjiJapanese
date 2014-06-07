@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nothing"
+        android:layout_width="1dp"
+        android:layout_height="1dp"/>
+    
+    <ImageView
+        android:id="@+id/nothing"
+        android:layout_width="70dp"
+        android:layout_height="70dp" 
+        android:src="@drawable/one" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/arrow"
+        android:layout_toRightOf="@+id/nothing"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/app_name"
+            android:textSize="17sp"
+            android:textStyle="bold" 
+            android:textColor="#1abc9c"
+            android:paddingLeft="10dp"
+            android:paddingTop="18dp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/arrow_next" />
+
+</RelativeLayout>
